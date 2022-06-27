@@ -13,10 +13,11 @@ function PartnerCard({ partnerName, partnerImageUrl, partnerUrl = '#'}) {
 
 function PartnersSponsor({ title, partners, titleClass = "" }) {
   return (
-    <div className="flex flex-col text-center lg:text-left gap-4">
+    <div className="flex flex-col text-center 2xl:text-left gap-4">
       <h3 className={`${titleClass} text-3xl font-semibold`}>{title}</h3>
-      <div className='flex flex-col lg:flex-row lg:justify-center flex-wrap gap-16 mt-4'>
-        {partners.map((partner) => <PartnerCard partnerName={partner.name} partnerImageUrl={partner.imageUrl} key={partner.imageUrl}/>)}
+      <p className="text-gray-300">{description}</p>
+      <div className='flex flex-col 2xl:flex-row flex-wrap gap-16'>
+        {images.map((image) => <img className="object-contain rounded" src={image.src} alt={image.alt} key={image.src} />)}
       </div>
     </div>
   );

@@ -40,33 +40,33 @@ const partners = [
 <Layout title="ACM R15E">
 	<section class="flex flex-col justify-center items-center text-center gap-8">
 		<div>
-			<h1 class="text-8xl gold-text">R15E</h1>
-			<span class="text-4xl gold-text">A Computer Science Convention</span>
+			<h1 class="text-8xl gold-text font-vogue">R15E</h1>
+			<span class="text-4xl gold-text font-cannu">A Computer Science Convention</span>
 		</div>
 		<div class="w-[450px] h-[315px] overflow-hidden">
-			<img class="scale-[1.4]" src="/images/hero-logo.png" alt="hero logo">
+			<img class="scale-[1.4]" src="/r15e/images/hero-logo.png" alt="hero logo">
 		</div>
 		<span class="text-2xl gold-text italic w-full">Forging Changemakers in the Computing Field</span>
-		<div class="flex gap-12">
+		<div class="flex flex-col gap-8 lg:flex-row lg:gap-12">
 			<a
               href="https://bit.ly/ACMR15E"
-              class="bg-gradient-to-r from-riseLightGold to-riseDarkGold text-white rounded-xl py-1 px-8 hidden sm:block"
+              class="bg-gradient-to-r from-riseLightGold to-riseDarkGold text-white rounded-xl py-2 px-8"
             >
               Register Now
             </a>
 			<a
               href="/events"
-              class="border-2 border-riseLightGold text-white rounded-xl py-1 px-8 hidden sm:block hover:bg-gradient-to-r hover:from-riseLightGold hover:to-riseDarkGold"
+              class="border-2 border-riseLightGold text-white rounded-xl py-2 px-8 hover:bg-gradient-to-r hover:from-riseLightGold hover:to-riseDarkGold"
             >
 				June 27 -  July 02
             </a>
 		</div>
-
 		<div class="relative flex overflow-x-hidden shrink-0 mt-8">
 			<div class="animate-marquee whitespace-nowrap flex flex-nowrap shrink-0">
 				{partners.map((partner) => <span class="text-4xl mx-4"><img src={partner.imageUrl} class="rounded min-w-max h-16" alt={partner.name} key={partner.imageUrl}/></span>)}
 			</div>
 		</div>
+		<p class="text-gray-300 text-xl text-center max-w-5xl mt-4"><b>R15E: A Computer Science Convention</b> is a week-long virtual event from June 27 - July 2, 2022 in celebration of Far Eastern University - Institute of Technology Association for Computing Machinery (FEU Tech ACM) Student Chapter’s fifteenth year anniversary, consisting of various activities and competitions that explore topics and enhance the skills needed in the computing industry.</p>
 	</section>
 
 	<section class="flex flex-col gap-12 text-center items-center">
@@ -76,37 +76,37 @@ const partners = [
 			<CardCalendar
 				title="Day 0: DESIGN"
 				date="June 22 - 29"
-				imgSrc="/images/calendar/design.png"
+				imgSrc="/r15e/images/calendar/design.png"
 				description={`A web development competition and outreach`}/>
 			<CardCalendar
 				title="Day 1: DEFINE"
 				date="June 27, 3:00pm - 7:00pm"
-				imgSrc="/images/calendar/define.png"
+				imgSrc="/r15e/images/calendar/define.png"
 				description={`A series of talks about the field of computing`}/>
 			<CardCalendar
 				title="Day 2: DECODE"
 				date="June 28, 3:00pm - 7:00pm"
-				imgSrc="/images/calendar/decode.png"
+				imgSrc="/r15e/images/calendar/decode.png"
 				description={`Webinar-workshops for youth in tech`}/>
 			<CardCalendar
 				title="Day 3: DEFY"
 				date="June 29, 3:00pm - 7:00pm"
-				imgSrc="/images/calendar/defy.png"
+				imgSrc="/r15e/images/calendar/defy.png"
 				description={`CS/IT collegiate quiz bee`}/>
 			<CardCalendar
 				title="Day 4: DECRYPT"
 				date="June 30, 3:00pm - 7:00pm"
-				imgSrc="/images/calendar/decrypt.png"
+				imgSrc="/r15e/images/calendar/decrypt.png"
 				description={`Tech Trials 3: a puzzle escape room competition`}/>
 			<CardCalendar
 				title="Day 5: DIVERGE"
 				date="July 01, 10:00am - 5:00pm"
-				imgSrc="/images/calendar/diverge.png"
+				imgSrc="/r15e/images/calendar/diverge.png"
 				description={`Webinars and company virtual booths via Discord`}/>
 			<CardCalendar
 				title="Day 6: DEPLOY"
 				date="July 02, 3:00pm - 7:00pm"
-				imgSrc="/images/calendar/deploy.png"
+				imgSrc="/r15e/images/calendar/deploy.png"
 				description={`Panel discussion and closing event`}/>
 		</div>
 	</section>
